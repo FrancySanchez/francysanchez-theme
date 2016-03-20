@@ -1,0 +1,38 @@
+
+.c-form {
+    padding: 20px 20px 20px 20px;
+}
+.myclase .comment-form-comment textarea {
+    display: block;
+     height: 100px;
+    width: 700px;
+    padding-bottom: 0px;
+}
+
+.myclase .comment-form-author input {
+    display: block;
+    height: 30px;
+    width: 700px;
+}
+
+.myclase .comment-form-email input {
+    display: block;
+    height: 30px;
+    width: 700px;
+}
+
+.myclase .comment-form-url input {
+    display: block;
+    height: 30px;
+    width: 700px;
+}
+
+.myclase .form-submit input {
+    color: #ffffff;
+    background-color: #de6b70;
+    border-radius: 6px;
+    border-bottom: solid 4px #a92e33;
+    font-family: Quattrocento;
+    height: 30px;
+    width: 200px;
+}

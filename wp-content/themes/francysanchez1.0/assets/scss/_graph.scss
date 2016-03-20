@@ -1,0 +1,126 @@
+/* Graph bar ------------------------------------------------*/
+
+.graph {
+    width: 80%;
+    margin: $size-xl auto 50px;
+    display: flex;
+    height: 300px;
+    border-radius: 6px;
+    background: url("image/beach.jpg") #fff;
+    background-size: cover;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    @media #{$small-only} {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        background: transparent;
+        margin: 30px auto 0;
+    }
+    @media #{$medium-only} {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        background: transparent;
+        margin: 30px auto 0;
+    }
+    &__bar {
+        margin-bottom: -26px;
+        @media #{$small-only} {
+            margin-bottom: 130px;
+        }
+        @media #{$medium-only} {
+            &:nth-child(5){
+                display: none;
+            }
+        }
+        position: relative;
+        text-align: center;
+        background: linear-gradient(to right,
+        #3DA5AF 50%,
+        #4ABDC8 50%,
+        #4ABDC8 100%);
+        width: 100px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        min-height: 100px;
+        &:before {
+            content: "";
+            background: url('image/bar-top.svg') no-repeat center top;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: -50px;
+            left: 0;
+        }
+        &:after {
+            content: "";
+            background: url("image/bar-bottom.svg") no-repeat center top;
+            width: 127px;
+            height: 100px;
+            position: absolute;
+            bottom: -75px;
+            left: 0px;
+        }
+        &:hover {
+            .graph__tooltip {
+                animation: tooltips-slideUp 1s ease forwards;
+            }
+        }
+    }
+    &__tooltip {
+        background-color: rgba(0, 0, 0, .6);
+        padding: 5px 10px;
+        color: $white;
+        width: 60px;
+        text-align: center;
+        top: -66px;
+        left: calc(50% - 30px);
+        border-radius: 15px;
+        position: absolute;
+        opacity: .8;
+        animation: tooltips-slideUp-reverse .5s ease forwards;
+        &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 10px);
+            border-left: 0;
+            border-right: 10px solid rgba(0, 0, 0, .6);
+            border-top: 0;
+            border-bottom: 10px solid transparent;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -40px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@keyframes tooltips-slideUp {
+    0% {
+        opacity: .8;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, -30px, 0);
+    }
+}
+
+@keyframes tooltips-slideUp-reverse {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, -30px, 0);
+    }
+    100% {
+        opacity: .8;
+        transform: translate3d(0, 0, 0);
+    }
+}

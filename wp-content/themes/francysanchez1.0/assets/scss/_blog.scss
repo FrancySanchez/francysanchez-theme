@@ -1,0 +1,10 @@
+/*-----BLOG-----------------------------------------------------------------------------*/
+
+.c-section-blog {
+    background-color: #faf9f5;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    &__title {
+        @include big-title($sunglo);
+    }
+}

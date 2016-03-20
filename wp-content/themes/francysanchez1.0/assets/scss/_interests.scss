@@ -1,0 +1,29 @@
+/*-----INTERESTS-----------------------------------------------------------------------------*/
+
+.c-section-interests {
+    background-color: $alabaster;
+    padding-top: $size-l;
+    margin-bottom: $size-xxl;
+}
+
+.c-section-interests__title{
+    @include medium-title($sunglo);
+
+}
+
+.c-section-interest {
+    &__text {
+        color: $sunglo;
+        font-family: Quattrocento;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    &__icon {
+        font-size: 60px;
+        color: $sunglo;
+        margin-bottom: 1rem;
+    }
+
+}

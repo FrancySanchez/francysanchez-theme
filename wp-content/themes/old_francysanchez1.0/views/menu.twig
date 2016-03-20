@@ -1,0 +1,10 @@
+
+    <ul class="nav navbar-nav navbar-right c-text">
+        {% for item in menu.get_items %}
+                <li class="{{item.classes | join(' ')}}">
+                  <a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a>
+                    
+                </li>
+        {% endfor %}
+    </ul>
+

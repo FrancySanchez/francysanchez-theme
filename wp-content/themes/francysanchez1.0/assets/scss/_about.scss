@@ -1,0 +1,30 @@
+    /*-----ABOUT-----------------------------------------------------------------------------*/
+
+.c-section-about {
+    background-color: #faf9f5;
+    padding-top: 40px;
+    padding-bottom: $size-xl;
+}
+
+.c-section-about__diagonal {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    fill: #faf9f5;
+}
+
+.c-section-about {
+    &__title {
+        @include big-title($sunglo);
+    }
+    &__text {
+        color: $sunglo;
+        font-family: Quattrocento;
+        font-size: $size-l;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto $size-l;
+    }
+}

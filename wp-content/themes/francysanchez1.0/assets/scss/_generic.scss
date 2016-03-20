@@ -1,0 +1,34 @@
+.home {
+    background: url("image/beach.jpg") no-repeat top center $alabaster;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $sunglo;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 4px 4px $well-read;
+    font-family: Quattrocento;
+    padding: 1rem 2rem;
+    transition: box-shadow .1s ease .1s, background-color .2s ease ; 
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: $well-read;
+    box-shadow: 4px 4px $sunglo;
+}
+
+.btn-primary:focus {
+    color: #ffffff;
+    background-color: $sunglo;
+    box-shadow: 4px 4px $well-read;
+}
+
+body {
+    background-color: $alabaster;
+}
+
+html{
+    font-size: 100%;
+}

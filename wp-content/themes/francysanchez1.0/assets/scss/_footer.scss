@@ -1,0 +1,61 @@
+/*-----FOOTER-----------------------------------------------------------------------------*/
+
+.c-section-footer {
+    background-color: #4abec9;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.c-section-footer__diagonal {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    fill: #4ABEC9;
+}
+
+.c-section-footer h2 {
+    color: #ffffff;
+    font-family: 'sensa_brushfill_demo';
+    font-size: 68px;
+    text-align: left;
+    @media #{$small-only} {
+        text-align: center;
+    }
+}
+
+.c-section-footer p {
+    color: #ffffff;
+    font-family: Quattrocento;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.c-footer-btn .btn-default {
+    color: #ffffff;
+    background-color: #de6b70;
+    border-radius: 6px;
+    border-bottom: solid 4px #a92e33;
+    font-family: Quattrocento;
+    height: 40px;
+    width: 100%;
+}
+
+.c-footer-btn .btn-default:hover {
+    color: #ffffff;
+    background-color: #a92e33;
+    border-top: solid 4px #de6b70;
+}
+
+.c-social-media {
+    font-size: 40px;
+    text-align: left;
+    @media #{$small-only} {
+        text-align: center;
+    }
+    a{
+        color: $sunglo
+    }
+}

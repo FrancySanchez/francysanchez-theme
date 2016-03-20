@@ -1,0 +1,34 @@
+$size-xxxl: 4.2rem;
+$size-xxl: 3rem;
+$size-xl: 1.5rem;
+$size-l: 1.2rem;
+$size-m: 1rem;
+$size-s: .9rem;
+$size-xs: .8rem;
+@mixin big-title($color, $spanBgColor:$alabaster) {
+    color: $color;
+    font-family: 'sensa_brushfill_demo';
+    font-size: $size-xxxl;
+    text-align: center;
+    width: 80%;
+    margin: $size-xl auto $size-xxl;
+    text-shadow: 6px 5px 0px rgba(222, 107, 112, 0.22);
+    background: url("image/titles-bg.png") repeat-x center;
+    span {
+        background-color: $spanBgColor;
+        padding: 0 2rem;
+    }
+    @media #{$small-only} {
+        width: 100%;
+        margin: $size-l auto ;
+    }
+}
+
+@mixin medium-title($color) {
+    color: $color;
+    font-family: 'sensa_brushfill_demo';
+    font-size: $size-xxl;
+    text-align: center;
+    width: 80%;
+    margin: $size-xl auto $size-xxl;
+}

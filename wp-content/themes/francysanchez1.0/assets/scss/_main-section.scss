@@ -1,0 +1,28 @@
+/*-----MAIN-----------------------------------------------------------------------------*/
+
+.c-section-main {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    &__map {
+        padding-top: 20px;
+        @media #{$small-only} {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__title {
+        color: #325659;
+        font-family: 'sensa_brushfill_demo';
+        font-size: 74px;
+    }
+    &__text {
+        color: #325659;
+        font-family: Quattrocento;
+        font-weight: bold;
+        font-size: $size-l;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+}

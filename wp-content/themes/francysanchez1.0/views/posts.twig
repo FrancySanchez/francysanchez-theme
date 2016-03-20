@@ -1,0 +1,15 @@
+{{columnas}}
+<div class="row-flex row-flex--wrap row-flex--three-columns">
+    {% for item in posts %}
+    <div class="post-card">
+        <div class="post-card__header" style="background-image:url({{item.thumbnail.src|resize(center)}})">
+
+               <span class="post-card__date"> {{item.date}}</span>
+        </div>
+        <div class="post-card__body">
+            <h3> <a href="{{item.link}}" title="View more"> {{ item.post_title}}</a></h3>
+            <p> {{item.post_content|slice(0, 200)}} </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

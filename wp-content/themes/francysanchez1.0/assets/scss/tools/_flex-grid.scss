@@ -1,0 +1,28 @@
+$colgap: .8rem;
+.row-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -$colgap;
+    margin-right: -$colgap;
+    max-width: 1170px;
+    margin: 0 auto;
+    &--wrap {
+        flex-wrap: wrap;
+    }
+    &--three-columns {
+        & > * {
+            width: calc(100%/3 - 1.6rem);
+            @media #{$small-only} {
+                width: 100%;
+            }
+        }
+    }
+    &--two-columns {
+        & > * {
+            width: calc(100%/2 - 1.6rem);
+            @media #{$small-only} {
+                width: 100%;
+            }
+        }
+    }
+}
