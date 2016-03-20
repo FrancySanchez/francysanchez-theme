@@ -4327,6 +4327,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/image\/bar-bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 544,
+		"inputAbbreviatedPath": "\/image\/bar-bottom.png",
+		"outputAbbreviatedPath": "\/image\/bar-bottom.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/bar-top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 791,
+		"inputAbbreviatedPath": "\/image\/bar-top.png",
+		"outputAbbreviatedPath": "\/image\/bar-top.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/image\/beach.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4656,7 +4678,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Francy Sanchez",
+"lastSavedByUser": "Juan Pernia",
 "manualImportLinks": {
 	"\/assets\/js\/manifesto.js": [
 		{
@@ -4669,8 +4691,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "assets",
-	"displayValue": "francysanchez1.0",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "francy sanchez",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_darkGray"
 	},
 "projectSettings": {
